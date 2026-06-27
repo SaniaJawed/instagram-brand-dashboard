@@ -1,0 +1,58 @@
+{
+  "meta": {
+    "title": "Instagram to Profitable Brand — Dataset",
+    "description": "All chart data lives here. Fetched by script.js in Phase 2.",
+    "lastUpdated": "2026-06"
+  },
+  "followerGrowth": {
+    "labels": ["Month 1","Month 2","Month 3","Month 4","Month 5","Month 6","Month 7","Month 8","Month 9","Month 10","Month 11","Month 12"],
+    "followers": [200, 480, 900, 1800, 3200, 5100, 7400, 9800, 14000, 22000, 38000, 58000],
+    "revenue":   [0,   0,   0,   2000, 5000, 8000, 15000, 22000, 40000, 75000, 140000, 240000]
+  },
+  "engagementBenchmarks": {
+    "followerRanges": ["1K–5K","5K–10K","10K–50K","50K–200K","200K+"],
+    "avgEngagement":  [8.0,    5.5,     3.8,      1.9,       0.9],
+    "goodEngagement": [6.0,    4.0,     3.0,      1.5,       0.7]
+  },
+  "contentPerformance": {
+    "types":    ["Reels","Carousels","Static posts","Stories","Lives"],
+    "reach":    [85, 62, 35, 28, 45],
+    "saves":    [12, 38, 15,  5, 20],
+    "converts": [6,  22, 8,   4, 18]
+  },
+  "revenueMix": {
+    "stage": "authority",
+    "sources": ["Brand deals","Affiliate","Digital products","Services/consulting"],
+    "percentage": [45, 20, 25, 10]
+  },
+  "nicheMultipliers": {
+    "finance":   2.2,
+    "tech":      1.9,
+    "education": 1.6,
+    "fitness":   1.5,
+    "fashion":   1.2,
+    "food":      1.0
+  },
+  "myths": [
+    {
+      "myth": "You need 100K followers to make money",
+      "reality": "10K followers + 6% engagement > 200K followers + 0.5% engagement",
+      "stat": "Engagement rate is 4x more valuable than raw follower count for brand deals"
+    },
+    {
+      "myth": "Posting every day grows your account",
+      "reality": "3 high-quality posts/week outperform 7 mediocre ones",
+      "stat": "Algorithm weights saves and shares, not posting frequency"
+    },
+    {
+      "myth": "Brand deals are the main income stream",
+      "reality": "Top creators earn 60–70% from own products — not brand deals",
+      "stat": "Your own product is an asset; brand deals are freelance income"
+    },
+    {
+      "myth": "Going viral grows your brand",
+      "reality": "Viral posts bring off-niche followers who don't convert",
+      "stat": "Retention rate of viral followers is typically under 15%"
+    }
+  ]
+}
