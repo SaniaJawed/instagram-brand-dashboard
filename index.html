@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Instagram → Profitable Brand</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- LOADER -->
+  <div class="loader" id="loader">
+    <div class="loader__logo">IG → Brand</div>
+    <div class="loader__bar"><div class="loader__bar-fill"></div></div>
+  </div>
+
+  <!-- ANIMATED BACKGROUND -->
+  <div class="bg-layer" aria-hidden="true">
+    <div class="bg-orb bg-orb--1"></div>
+    <div class="bg-orb bg-orb--2"></div>
+    <div class="bg-orb bg-orb--3"></div>
+  </div>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar" aria-label="Brand journey navigation">
+    <div class="sidebar__brand">
+      <span class="sidebar__logo">IG →</span>
+      <span class="sidebar__tagline">Brand Blueprint</span>
+    </div>
+    <nav class="journey-nav" aria-label="Journey stages">
+      <ul class="journey-nav__list">
+        <li class="journey-nav__item active" data-section="hero">
+          <span class="journey-nav__dot"></span>
+          <span class="journey-nav__label">Overview</span>
+        </li>
+        <li class="journey-nav__item" data-section="stage-page">
+          <span class="journey-nav__dot"></span>
+          <span class="journey-nav__label">Stage 1 — Just a page</span>
+        </li>
+        <li class="journey-nav__item" data-section="stage-community">
+          <span class="journey-nav__dot"></span>
+          <span class="journey-nav__label">Stage 2 — Community</span>
+        </li>
+        <li class="journey-nav__item" data-section="stage-authority">
+          <span class="journey-nav__dot"></span>
+          <span class="journey-nav__label">Stage 3 — Authority</span>
+        </li>
+        <li class="journey-nav__item" data-section="stage-brand">
+          <span class="journey-nav__dot"></span>
+          <span class="journey-nav__label">Stage 4 — Brand</span>
+        </li>
+        <li class="journey-nav__item" data-section="calculator">
+          <span class="journey-nav__dot"></span>
+          <span class="journey-nav__label">Revenue calculator</span>
+        </li>
+        <li class="journey-nav__item" data-section="myths">
+          <span class="journey-nav__dot"></span>
+          <span class="journey-nav__label">Myths vs reality</span>
+        </li>
+      </ul>
+    </nav>
+    <div class="sidebar__footer">
+      <p>An interactive study in<br/>creator economics</p>
+    </div>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main class="main-content">
+
+    <!-- HERO -->
+    <section class="section section--hero" id="hero" aria-label="Overview">
+      <div class="hero">
+
+        <!-- Animated visual -->
+        <div class="hero-visual" aria-hidden="true">
+          <!-- SVG growth curve -->
+          <svg class="hero-curve" viewBox="0 0 800 200" preserveAspectRatio="none" fill="none">
+            <defs>
+              <linearGradient id="curveGrad" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0%"   stop-color="#F5A623" stop-opacity="0"/>
+                <stop offset="50%"  stop-color="#F5A623" stop-opacity="0.6"/>
+                <stop offset="100%" stop-color="#F5A623" stop-opacity="1"/>
+              </linearGradient>
+              <linearGradient id="fillGrad" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%"   stop-color="#F5A623" stop-opacity="0.15"/>
+                <stop offset="100%" stop-color="#F5A623" stop-opacity="0"/>
+              </linearGradient>
+            </defs>
+            <path id="growthFill"
+              d="M0 200 L0 185 C100 183,150 180,200 172 C280 158,320 140,380 118 C440 95,500 68,580 42 C640 22,700 10,800 4 L800 200 Z"
+              fill="url(#fillGrad)" opacity="0">
+              <animate attributeName="opacity" from="0" to="1" dur="1s" begin="2.5s" fill="freeze"/>
+            </path>
+            <path id="growthLine"
+              d="M0 185 C100 183,150 180,200 172 C280 158,320 140,380 118 C440 95,500 68,580 42 C640 22,700 10,800 4"
+              stroke="url(#curveGrad)" stroke-width="2.5" stroke-linecap="round"
+              stroke-dasharray="1200" stroke-dashoffset="1200">
+              <animate attributeName="stroke-dashoffset" from="1200" to="0" dur="2s" begin="2.2s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1"/>
+            </path>
+            <!-- Glowing dot at end -->
+            <circle cx="800" cy="4" r="5" fill="#F5A623" opacity="0">
+              <animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="4s" fill="freeze"/>
+            </circle>
+            <circle cx="800" cy="4" r="10" fill="#F5A623" opacity="0">
+              <animate attributeName="opacity" values="0;0.3;0" dur="2s" begin="4.2s" repeatCount="indefinite"/>
+              <animate attributeName="r" values="5;16;5" dur="2s" begin="4.2s" repeatCount="indefinite"/>
+            </circle>
+          </svg>
+
+          <!-- Floating bubbles -->
+          <div class="hero-bubble" style="top:20px;left:5%;--dur:4s;--delay:0s">
+            <span class="hero-bubble__dot hero-bubble__dot--green"></span>
+            <span>+2,847 followers today</span>
+          </div>
+          <div class="hero-bubble" style="top:10px;left:38%;--dur:4.5s;--delay:-1s">
+            <span class="hero-bubble__dot"></span>
+            <span>Brand deal: ₹45,000</span>
+          </div>
+          <div class="hero-bubble" style="top:30px;right:8%;--dur:5s;--delay:-2s">
+            <span class="hero-bubble__dot hero-bubble__dot--purple"></span>
+            <span>Course sold ×12</span>
+          </div>
+          <div class="hero-bubble" style="bottom:90px;left:22%;--dur:3.8s;--delay:-0.5s">
+            <span class="hero-bubble__dot hero-bubble__dot--green"></span>
+            <span>Engagement: 6.4%</span>
+          </div>
+
+          <!-- Mini bar chart at bottom -->
+          <div class="hero-stats" aria-hidden="true">
+            <div class="hero-bar" style="height:12%;animation-delay:2.4s"></div>
+            <div class="hero-bar" style="height:18%;animation-delay:2.5s"></div>
+            <div class="hero-bar" style="height:14%;animation-delay:2.55s"></div>
+            <div class="hero-bar" style="height:22%;animation-delay:2.6s"></div>
+            <div class="hero-bar" style="height:28%;animation-delay:2.65s"></div>
+            <div class="hero-bar" style="height:20%;animation-delay:2.7s"></div>
+            <div class="hero-bar" style="height:35%;animation-delay:2.75s"></div>
+            <div class="hero-bar" style="height:42%;animation-delay:2.8s"></div>
+            <div class="hero-bar" style="height:38%;animation-delay:2.85s"></div>
+            <div class="hero-bar" style="height:55%;animation-delay:2.9s"></div>
+            <div class="hero-bar" style="height:62%;animation-delay:2.95s"></div>
+            <div class="hero-bar" style="height:58%;animation-delay:3s"></div>
+            <div class="hero-bar" style="height:75%;animation-delay:3.05s"></div>
+            <div class="hero-bar" style="height:82%;animation-delay:3.1s"></div>
+            <div class="hero-bar" style="height:78%;animation-delay:3.15s"></div>
+            <div class="hero-bar" style="height:90%;animation-delay:3.2s"></div>
+            <div class="hero-bar" style="height:95%;animation-delay:3.25s"></div>
+            <div class="hero-bar" style="height:100%;animation-delay:3.3s"></div>
+          </div>
+        </div>
+
+        <p class="hero__eyebrow">What really works</p>
+        <h1 class="hero__title">From Instagram page<br/>to profitable brand</h1>
+        <p class="hero__subtitle">Most creators chase followers. Brands chase outcomes. This is the data-backed story of what separates the two.</p>
+
+        <div class="kpi-grid" aria-label="Key statistics">
+          <div class="kpi-card tilt">
+            <span class="kpi-card__value" data-count="10" data-suffix="K">0</span>
+            <span class="kpi-card__label">Followers to start earning</span>
+            <span class="kpi-card__note">if engagement rate &gt; 5%</span>
+          </div>
+          <div class="kpi-card tilt">
+            <span class="kpi-card__value" data-count="3" data-prefix="₹" data-suffix="L+">0</span>
+            <span class="kpi-card__label">Monthly revenue possible</span>
+            <span class="kpi-card__note">from a 50K niche account</span>
+          </div>
+          <div class="kpi-card tilt">
+            <span class="kpi-card__value" data-count="3" data-suffix="×">0</span>
+            <span class="kpi-card__label">Higher income from products</span>
+            <span class="kpi-card__note">vs brand deals</span>
+          </div>
+          <div class="kpi-card tilt">
+            <span class="kpi-card__value" data-count="18" data-suffix="mo">0</span>
+            <span class="kpi-card__label">Median time — page to brand</span>
+            <span class="kpi-card__note">consistent creators</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STAGE 1 -->
+    <section class="section" id="stage-page" aria-label="Stage 1">
+      <div class="section__header">
+        <span class="section__stage-label">Stage 1</span>
+        <h2 class="section__title">Just a page</h2>
+        <p class="section__desc">0–1K followers. Posting into the void. Most people quit here.</p>
+      </div>
+      <div class="content-grid content-grid--2col">
+        <div class="content-card tilt">
+          <h3 class="content-card__title">What creators do here</h3>
+          <ul class="insight-list">
+            <li class="insight-list__item insight-list__item--bad">Post randomly, no content pillar</li>
+            <li class="insight-list__item insight-list__item--bad">Chase trends outside their niche</li>
+            <li class="insight-list__item insight-list__item--bad">Obsess over follower count, not saves</li>
+            <li class="insight-list__item insight-list__item--good">Best move: pick ONE topic, go deep</li>
+          </ul>
+        </div>
+        <div class="content-card tilt">
+          <h3 class="content-card__title">What the data shows</h3>
+          <div class="chart-placeholder" id="chart-stage1"><span class="chart-placeholder__text">Loading chart…</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STAGE 2 -->
+    <section class="section" id="stage-community" aria-label="Stage 2">
+      <div class="section__header">
+        <span class="section__stage-label">Stage 2</span>
+        <h2 class="section__title">Building community</h2>
+        <p class="section__desc">1K–10K followers. Trust is forming. Revenue seeds get planted here.</p>
+      </div>
+      <div class="content-grid content-grid--2col">
+        <div class="content-card tilt">
+          <h3 class="content-card__title">Engagement rate benchmark</h3>
+          <div class="chart-placeholder" id="chart-engagement"><span class="chart-placeholder__text">Loading chart…</span></div>
+        </div>
+        <div class="content-card tilt">
+          <h3 class="content-card__title">What actually builds community</h3>
+          <ul class="insight-list">
+            <li class="insight-list__item insight-list__item--good">Reply to every comment for first 6 months</li>
+            <li class="insight-list__item insight-list__item--good">Stories over posts — more personal</li>
+            <li class="insight-list__item insight-list__item--good">Micro-collabs with same-size accounts</li>
+            <li class="insight-list__item insight-list__item--bad">Viral posts — big spike, no retention</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- STAGE 3 -->
+    <section class="section" id="stage-authority" aria-label="Stage 3">
+      <div class="section__header">
+        <span class="section__stage-label">Stage 3</span>
+        <h2 class="section__title">Becoming the authority</h2>
+        <p class="section__desc">10K–50K followers. First brand deals. First product experiments.</p>
+      </div>
+      <div class="content-grid content-grid--3col">
+        <div class="content-card content-card--highlight tilt">
+          <h3 class="content-card__title">Brand deals</h3>
+          <p class="content-card__body">10K–25K accounts: ₹5K–₹25K per post. Niche matters more than size.</p>
+        </div>
+        <div class="content-card content-card--highlight tilt">
+          <h3 class="content-card__title">Digital products</h3>
+          <p class="content-card__body">Presets, ebooks, templates. Low effort to create, 100% margin, sells while you sleep.</p>
+        </div>
+        <div class="content-card content-card--highlight tilt">
+          <h3 class="content-card__title">Affiliate income</h3>
+          <p class="content-card__body">Only promote what you actually use. Trust = conversion. One bad rec kills it.</p>
+        </div>
+      </div>
+      <div class="content-grid content-grid--1col" style="margin-top:1rem">
+        <div class="content-card tilt">
+          <h3 class="content-card__title">Revenue mix at Stage 3</h3>
+          <div class="chart-placeholder" id="chart-revenue-mix"><span class="chart-placeholder__text">Loading chart…</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STAGE 4 -->
+    <section class="section" id="stage-brand" aria-label="Stage 4">
+      <div class="section__header">
+        <span class="section__stage-label">Stage 4</span>
+        <h2 class="section__title">The profitable brand</h2>
+        <p class="section__desc">The platform becomes a launchpad, not the business itself.</p>
+      </div>
+      <div class="content-grid content-grid--2col">
+        <div class="content-card tilt">
+          <h3 class="content-card__title">Follower growth vs revenue</h3>
+          <div class="chart-placeholder" id="chart-growth"><span class="chart-placeholder__text">Loading chart…</span></div>
+        </div>
+        <div class="content-card tilt">
+          <h3 class="content-card__title">The brand decoupling point</h3>
+          <p class="content-card__body">When your product sells independently of your next post — that's when you've crossed from creator to brand.</p>
+          <ul class="insight-list" style="margin-top:1rem">
+            <li class="insight-list__item insight-list__item--good">Email list &gt; follower count</li>
+            <li class="insight-list__item insight-list__item--good">Returning customers &gt; new followers</li>
+            <li class="insight-list__item insight-list__item--good">Revenue stable even on posting breaks</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CALCULATOR -->
+    <section class="section section--dark" id="calculator" aria-label="Revenue calculator">
+      <div class="section__header section__header--light">
+        <span class="section__stage-label section__stage-label--light">Interactive</span>
+        <h2 class="section__title section__title--light">What could you earn?</h2>
+        <p class="section__desc section__desc--light">Enter your numbers. Get a realistic estimate.</p>
+      </div>
+      <div class="calculator">
+        <div class="calculator__inputs">
+          <div class="input-group">
+            <label class="input-group__label" for="calc-followers">Followers</label>
+            <input class="input-group__field" type="number" id="calc-followers" placeholder="e.g. 25000" min="0" />
+          </div>
+          <div class="input-group">
+            <label class="input-group__label" for="calc-engagement">Engagement rate (%)</label>
+            <input class="input-group__field" type="number" id="calc-engagement" placeholder="e.g. 4.5" min="0" max="100" step="0.1" />
+          </div>
+          <div class="input-group">
+            <label class="input-group__label" for="calc-niche">Niche</label>
+            <select class="input-group__field" id="calc-niche">
+              <option value="">Select your niche</option>
+              <option value="finance">Finance / investing</option>
+              <option value="fitness">Fitness / health</option>
+              <option value="fashion">Fashion / lifestyle</option>
+              <option value="tech">Tech / SaaS</option>
+              <option value="food">Food / recipes</option>
+              <option value="education">Education / career</option>
+            </select>
+          </div>
+        </div>
+        <div class="calculator__result" id="calc-result">
+          <p class="calculator__result-placeholder">Fill in your details above to see your estimate.</p>
+        </div>
+        <button class="btn btn--primary" id="calc-btn" type="button">Calculate my revenue potential</button>
+      </div>
+    </section>
+
+    <!-- MYTHS -->
+    <section class="section" id="myths" aria-label="Myths vs reality">
+      <div class="section__header">
+        <span class="section__stage-label">Busted</span>
+        <h2 class="section__title">Myths vs reality</h2>
+        <p class="section__desc">Click each myth to reveal what the data actually shows.</p>
+      </div>
+      <div class="myths-grid">
+        <article class="myth-card tilt">
+          <div class="myth-card__front">
+            <span class="myth-card__tag">Myth</span>
+            <p class="myth-card__text">You need 100K followers to make money from Instagram</p>
+          </div>
+          <div class="myth-card__reality">
+            <span class="myth-card__tag myth-card__tag--reality">Reality</span>
+            <p class="myth-card__text">10K followers with 6%+ engagement earns more than 200K with 0.5%. Brands pay for real attention, not vanity numbers.</p>
+          </div>
+          <button class="myth-card__toggle" aria-expanded="false">Reveal reality</button>
+        </article>
+        <article class="myth-card tilt">
+          <div class="myth-card__front">
+            <span class="myth-card__tag">Myth</span>
+            <p class="myth-card__text">Posting every day is what grows your account</p>
+          </div>
+          <div class="myth-card__reality">
+            <span class="myth-card__tag myth-card__tag--reality">Reality</span>
+            <p class="myth-card__text">3 high-quality posts/week outperform 7 mediocre ones. Algorithm rewards saves and shares — not frequency.</p>
+          </div>
+          <button class="myth-card__toggle" aria-expanded="false">Reveal reality</button>
+        </article>
+        <article class="myth-card tilt">
+          <div class="myth-card__front">
+            <span class="myth-card__tag">Myth</span>
+            <p class="myth-card__text">Brand deals are the main income stream for creators</p>
+          </div>
+          <div class="myth-card__reality">
+            <span class="myth-card__tag myth-card__tag--reality">Reality</span>
+            <p class="myth-card__text">Top creators earn 60–70% from their own products — not brand deals. Your own product is an asset you own forever.</p>
+          </div>
+          <button class="myth-card__toggle" aria-expanded="false">Reveal reality</button>
+        </article>
+        <article class="myth-card tilt">
+          <div class="myth-card__front">
+            <span class="myth-card__tag">Myth</span>
+            <p class="myth-card__text">Going viral = growing your brand</p>
+          </div>
+          <div class="myth-card__reality">
+            <span class="myth-card__tag myth-card__tag--reality">Reality</span>
+            <p class="myth-card__text">Viral posts bring off-niche followers who don't convert. The best brands grow slowly with the right 1,000 people.</p>
+          </div>
+          <button class="myth-card__toggle" aria-expanded="false">Reveal reality</button>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
